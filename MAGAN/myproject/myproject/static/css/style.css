@@ -1,0 +1,167 @@
+/* General reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Body and background */
+body {
+    background: linear-gradient(to right, #ff7e5f, #feb47b);
+    color: #fff;
+    line-height: 1.6;
+}
+
+/* Main container */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Header */
+header {
+    position: relative;
+    text-align: center;
+    padding: 80px 0;
+}
+
+header h1 {
+    font-size: 4rem;
+    color: #fff;
+    font-weight: 700;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7);
+}
+
+header p {
+    font-size: 1.2rem;
+    color: rgba(255, 255, 255, 0.8);
+    margin-top: 10px;
+    animation: fadeIn 2s ease-out;
+}
+
+/* Button */
+.btn-primary {
+    display: inline-block;
+    background-color: #ff6b81;
+    padding: 15px 30px;
+    border-radius: 50px;
+    font-size: 1.2rem;
+    color: #fff;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #feb47b;
+    transform: scale(1.1);
+}
+
+/* Section styling */
+section {
+    margin: 60px 0;
+    padding: 60px 0;
+    background: rgba(0, 0, 0, 0.7);
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+}
+
+/* Section title */
+section h2 {
+    font-size: 3rem;
+    text-align: center;
+    color: #ff7e5f;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+/* Grid layout for sections */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.grid-item {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.grid-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+}
+
+/* Footer */
+footer {
+    background-color: #2a2a2a;
+    color: #bbb;
+    text-align: center;
+    padding: 30px 0;
+}
+
+footer p {
+    font-size: 1rem;
+    margin: 10px 0;
+}
+
+footer a {
+    color: #ff7e5f;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+footer a:hover {
+    color: #feb47b;
+}
+
+/* Animation for fadeIn effect */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Media Queries for responsiveness */
+@media screen and (max-width: 768px) {
+    header h1 {
+        font-size: 2.5rem;
+    }
+
+    .btn-primary {
+        font-size: 1rem;
+    }
+
+    section h2 {
+        font-size: 2.5rem;
+    }
+
+    .grid-container {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    header h1 {
+        font-size: 2rem;
+    }
+
+    section h2 {
+        font-size: 2rem;
+    }
+
+    .grid-item {
+        padding: 15px;
+    }
+}
