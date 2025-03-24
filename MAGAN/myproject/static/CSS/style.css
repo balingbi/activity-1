@@ -1,0 +1,46 @@
+/* General reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body and background */
+body {
+    min-height:100vh;
+    background-color: blueviolet;
+    color: #fff;
+    font-size:3rem;
+    display:flex;
+    flex-flow:column;
+}
+
+nav{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding:1rem;
+    background-color :black;
+    color:white;
+    font-size:2.5rem;
+}
+nav a{
+    text-decoration:none;
+    color:pink;
+    margin:0 15px;
+    font-size:1.5rem;
+}
+nav a:hover{
+    opacity:0.7;
+    color:blue
+}
+main{
+    flex-grow:1;
+    display:grid;
+    place-content:center;
+}
+
+h1,
+p{
+    text-align:center;
+}
