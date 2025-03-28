@@ -1,6 +1,5 @@
 from django.shortcuts import render
-
+from.models import Post
 def posts_list(request):
-    # Example data for posts
-    """Render the post list page."""
-    return render(request, 'posts_list.html')
+    posts=Post.objects.all()
+    return render(request, 'posts_list.html',{'posts': posts})
